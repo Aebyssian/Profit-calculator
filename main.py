@@ -32,15 +32,14 @@ def calculate_profit(start_date, end_date):
         sys.exit(1)
 
 def main():
-    parser = argparse.ArgumentParser(description='Calculate Dropshipping Profit.')
+    parser = argparse.ArgumentParser(description='Calculate Profit.')
     parser.add_argument('start_date', type=str, help='Start date in YYYY-MM-DD format')
     parser.add_argument('end_date', type=str, help='End date in YYYY-MM-DD format')
 
     args = parser.parse_args()
 
-    # Start Node.js server
     server_process = start_node_server()
-    time.sleep(5)  # Give the server some time to start
+    time.sleep(5) 
 
     try:
         calculate_profit(args.start_date, args.end_date)

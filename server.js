@@ -7,14 +7,14 @@ const port = 3000;
 
 // Amazon API credentials
 const amazonConfig = {
-    username: 'jake.b.wilson.1337@gmail.com',
-    password: '1AsTronoMic($)',
+    username: 'email',
+    password: 'password',
     //otpSecret: 'USJF YSN7 87YR F8HU',
 };
 
 // eBay API credentials
 const ebayConfig = {
-    token: 'YOUR_EBAY_API_TOKEN',
+    token: 'YOUR_EBAY_API_TOKEN', //need token from eBay developer portal ?
 };
 
 async function getAmazonData(startDate, endDate) {
